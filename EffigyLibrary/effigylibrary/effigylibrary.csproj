@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <Version>0.0.1</Version>
+    <Authors>Bjørn Mathisen</Authors>
+    <Company>Bear Claw Studios</Company>
+    <Product>Effigy Library</Product>
+    <Copyright>2019 by Bjørn Mathisen</Copyright>
+    <PackageProjectUrl>https://effigylibrary.com</PackageProjectUrl>
+  </PropertyGroup>
+
+</Project>
