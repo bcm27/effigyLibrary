@@ -7,6 +7,16 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <TabControl>
+            <TabItem Header="Library" Margin="-2,-2,-30,0">
+                <Grid Background="#FFE5E5E5" Margin="10,10,0,0"/>
+            </TabItem>
+            <TabItem Header="User" Margin="31,-2,-67,0">
+                <Grid Background="#FFE5E5E5">
+                    <DataGrid x:Name="userInfo"></DataGrid>
+                </Grid>
+            </TabItem>
+        </TabControl>
 
     </Grid>
 </Window>
