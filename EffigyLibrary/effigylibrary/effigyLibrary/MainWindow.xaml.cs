@@ -13,6 +13,11 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
+// SQL Connection 
+using System.Configuration;
+using System.Data;
+using System.Data.SqlClient;
+
 namespace effigylibrary
 {
     /// <summary>
@@ -23,6 +28,12 @@ namespace effigylibrary
         public MainWindow()
         {
             InitializeComponent();
+            FullGridData();
+        }
+
+        private void FullGridData()
+        {
+
         }
     }
 }
