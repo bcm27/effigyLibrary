@@ -1,5 +1,6 @@
 #pragma once
 #include "cMain.h"
+#include "cLogin.h"
 #include "wx/wx.h"
 
 class cApp : public wxApp {
