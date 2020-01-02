@@ -7,6 +7,12 @@ public:
 	cLogin();
 	~cLogin();
 
-private:
-	cLogin* m_frame1 = nullptr;
+public:
+	wxButton* cLogin_btn_login = nullptr;
+	wxButton* cLogin_btn_register = nullptr;
+
+	wxTextCtrl* cLogin_txt_userName = nullptr;
+	wxTextCtrl* cLogin_txt_password = nullptr;
+
+	wxListBox* cLogin_txt_storedUsers = nullptr;
 };
