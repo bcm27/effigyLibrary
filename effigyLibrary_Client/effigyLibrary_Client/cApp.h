@@ -12,5 +12,7 @@ public:
 	virtual bool OnInit();
 
 private:
-	cMain* m_frame1 = nullptr;
+
+	cLogin* m_frame01 = nullptr;
+	cMain* m_frame02 = nullptr;
 };
