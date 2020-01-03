@@ -11,10 +11,21 @@ public:
 	wxButton* cLogin_btn_login = nullptr;
 	wxButton* cLogin_btn_register = nullptr;
 
-	wxTextCtrl* cLogin_txt_userName = nullptr;
-	wxTextCtrl* cLogin_txt_password = nullptr;
+	wxTextCtrl* cLogin_txtbx_userName = nullptr;
+	wxTextCtrl* cLogin_txtbx_password = nullptr;
 
-	wxStaticText* cLogin_sttxt_storedUsers = nullptr;
-	wxListBox* cLogin_txt_storedUsers = nullptr;
+	wxStaticText* cLogin_stattxt_storedUsers = nullptr;
+	wxListBox* cLogin_listbx_storedUsers = nullptr;
+
+	void onButtonClicked(wxCommandEvent& event);
+
+	wxDECLARE_EVENT_TABLE();
+
+private:
+
+	enum {
+		ID_Login = 1
+	};
+
 
 };
