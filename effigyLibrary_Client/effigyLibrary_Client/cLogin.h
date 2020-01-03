@@ -14,5 +14,7 @@ public:
 	wxTextCtrl* cLogin_txt_userName = nullptr;
 	wxTextCtrl* cLogin_txt_password = nullptr;
 
+	wxStaticText* cLogin_sttxt_storedUsers = nullptr;
 	wxListBox* cLogin_txt_storedUsers = nullptr;
+
 };
