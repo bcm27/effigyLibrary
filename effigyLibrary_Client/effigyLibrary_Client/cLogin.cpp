@@ -26,5 +26,8 @@ cLogin::~cLogin()
 
 void cLogin::onButtonClicked(wxCommandEvent& event)
 {
+	// on button clicked for login attempt
 	cLogin_listbx_storedUsers->AppendString(cLogin_txtbx_userName->GetValue());
+	event.Skip();
+
 }
