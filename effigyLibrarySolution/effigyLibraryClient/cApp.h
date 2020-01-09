@@ -8,7 +8,6 @@ public:
 	cApp();
 	~cApp();
 
-public:
 	virtual bool OnInit();
 
 private:
