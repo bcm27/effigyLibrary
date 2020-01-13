@@ -12,6 +12,8 @@ cApp::~cApp()
 
 bool cApp::OnInit()
 {
+	auto myDBCon = new API::Database();
+
 	m_frame01 = new cLogin();
 	m_frame01->Show();
 
