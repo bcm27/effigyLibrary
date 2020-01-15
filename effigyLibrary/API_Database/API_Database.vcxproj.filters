@@ -15,12 +15,12 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\Headers\effigyLibraryAPI.h">
+    <ClInclude Include="API_Database.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\Source Files\effigyLibraryAPI.cpp">
+    <ClCompile Include="API_Database.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
