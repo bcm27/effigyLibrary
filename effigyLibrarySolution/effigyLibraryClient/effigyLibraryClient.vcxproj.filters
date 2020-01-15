@@ -2,31 +2,34 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <ClCompile Include="cMain.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>src\Source Files</Filter>
     </ClCompile>
     <ClCompile Include="cApp.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>src\Source Files</Filter>
     </ClCompile>
     <ClCompile Include="cLogin.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>src\Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="cMain.h">
-      <Filter>Headers</Filter>
+      <Filter>src\Headers</Filter>
     </ClInclude>
     <ClInclude Include="cApp.h">
-      <Filter>Headers</Filter>
+      <Filter>src\Headers</Filter>
     </ClInclude>
     <ClInclude Include="cLogin.h">
-      <Filter>Headers</Filter>
+      <Filter>src\Headers</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <Filter Include="Headers">
+    <Filter Include="src">
+      <UniqueIdentifier>{1764c534-d666-4221-884c-ac6cddf15650}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Headers">
       <UniqueIdentifier>{92ac94a7-0790-4419-b91e-53bf1fed78aa}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files">
+    <Filter Include="src\Source Files">
       <UniqueIdentifier>{80ae6624-8d55-4dfa-9c5a-42c76becfc64}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
