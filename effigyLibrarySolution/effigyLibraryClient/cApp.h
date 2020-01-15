@@ -4,7 +4,6 @@
 
 #include "cMain.h"
 #include "cLogin.h"
-#include "Database.h"
 
 class cApp : public wxApp {
 public:
