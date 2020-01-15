@@ -1,6 +1,5 @@
 #pragma once
 #include "cLogin.h"
-#include "effigyLibraryAPI.h"
 
 wxBEGIN_EVENT_TABLE(cLogin, wxFrame)
 EVT_BUTTON(10001, onButtonClicked)
@@ -23,7 +22,7 @@ cLogin::cLogin() : wxFrame(nullptr, wxID_HOME, "Effigy Library - Login", wxPoint
 
 cLogin::~cLogin()
 {
-	effigyLibraryAPI::printMessage();
+
 }
 
 void cLogin::onButtonClicked(wxCommandEvent& event)
