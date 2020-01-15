@@ -160,11 +160,6 @@
     <ClCompile Include="cLogin.cpp" />
     <ClCompile Include="cMain.cpp" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\effigyLibraryAPI\effigyLibraryAPI.vcxproj">
-      <Project>{581c2e1e-0bf9-49ad-9cac-4c3de365455a}</Project>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
