@@ -1,5 +1,7 @@
 #pragma once
 #include "cLogin.h"
+#include "API_Database.h"
+#include <plog/Log.h>
 
 wxBEGIN_EVENT_TABLE(cLogin, wxFrame)
 EVT_BUTTON(10001, onButtonClicked)
@@ -18,6 +20,7 @@ cLogin::cLogin() : wxFrame(nullptr, wxID_HOME, "Effigy Library - Login", wxPoint
 	cLogin_stattxt_storedUsers = new wxStaticText(this, wxID_ANY, "", wxPoint(), wxSize());
 
 	Center();
+	API_Database::printStatus();
 }
 
 cLogin::~cLogin()
@@ -30,5 +33,4 @@ void cLogin::onButtonClicked(wxCommandEvent& event)
 	// on button clicked for login attempt
 	cLogin_listbx_storedUsers->AppendString(cLogin_txtbx_userName->GetValue());
 	event.Skip();
-
 }

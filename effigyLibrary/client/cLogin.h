@@ -1,4 +1,7 @@
 #pragma once
+#ifndef _EFFIGY_CLOGIN_H
+#define _EFFIGY_CLOGIN_H
+
 #include <wx/wx.h>
 #include <wx/frame.h>
 
@@ -26,6 +29,6 @@ private:
 	enum {
 		ID_Login = 1
 	};
-
-
 };
+
+#endif // !_EFFIGY_CLOGIN_H
