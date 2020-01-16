@@ -1,0 +1,2 @@
+﻿2020-01-15 21:26:20.394 DEBUG [4028] [cApp::OnInit@17] Hello log!
+2020-01-15 21:26:20.444 DEBUG [4028] [cApp::OnInit@22] Frame initalized
