@@ -1,7 +1,6 @@
 #pragma once
 #include "cLogin.h"
 #include "API_Database.h"
-#include <plog/Log.h>
 
 wxBEGIN_EVENT_TABLE(cLogin, wxFrame)
 EVT_BUTTON(10001, onButtonClicked)
