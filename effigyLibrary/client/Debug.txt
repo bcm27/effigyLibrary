@@ -3,3 +3,6 @@
 2020-01-15 21:56:36.081 DEBUG [21136] [cApp::OnInit@17] Hello log!
 2020-01-15 21:56:36.094 DEBUG [21136] [API_Database::printStatus@6] We have accesed the database file
 2020-01-15 21:56:36.103 DEBUG [21136] [cApp::OnInit@22] Frame initalized
+2020-01-16 22:28:55.963 DEBUG [20264] [cApp::OnInit@17] Hello log!
+2020-01-16 22:28:55.983 DEBUG [20264] [API_Database::printStatus@6] We have accesed the database file
+2020-01-16 22:28:56.020 DEBUG [20264] [cApp::OnInit@22] Frame initalized
