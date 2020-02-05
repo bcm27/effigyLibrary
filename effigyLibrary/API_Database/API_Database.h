@@ -8,7 +8,7 @@
 
 namespace API_Database {
 
-	struct userInfo {
+	struct userInfoStruct {
 		std::string userName;
 		std::string firstName;
 		std::string lastName; 
@@ -16,7 +16,13 @@ namespace API_Database {
 	};
 
 	void printStatus();
-	void getUserInfo(userInfo user);
+
+	class userInfo {
+		void getUserInfo(userInfo user);
+
+		userInfoStruct getUserPass(std::string P);
+		userInfoStruct getUserName(std::string N)
+	};
 }
 
 #endif // !_EFFIGY_API_DATABASE_H

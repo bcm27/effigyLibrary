@@ -6,10 +6,24 @@ void API_Database::printStatus()
 	//PLOG_DEBUG << "We have accesed the database file";
 }
 
-void API_Database::getUserInfo(userInfo user) {
-	userInfo retUserInfo;
-	retUserInfo = NULL;
+class API_Database::userInfo {
 
+	userInfoStruct getUserInfo(userInfo user) {
+		// normally we would access the database for this info and return
+		// a new userInfo struct ; currently settng up mysql db on digital ocean
 
-	return retUserInfo;
-}
+		userInfoStruct retUserInfo;
+		retUserInfo.firstName = "Bjorn";
+		retUserInfo.lastName = "Mathisen";
+		retUserInfo.userName = "bcm27";
+		retUserInfo.tempPassword = "pass";
+
+		return retUserInfo;
+	}
+	userInfoStruct getUserPass(std::string P)
+	{
+		userInfoStruct ret; 
+		ret.tempPassword = "temp Pass";
+		return ret;
+	}
+};
