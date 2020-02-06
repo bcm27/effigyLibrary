@@ -26,4 +26,9 @@ class API_Database::userInfo {
 		ret.tempPassword = "temp Pass";
 		return ret;
 	}
+	userInfoStruct getUserName(std::string N)
+	{
+		return userInfoStruct();
+	}
 };
+

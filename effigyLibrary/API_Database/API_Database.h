@@ -21,7 +21,7 @@ namespace API_Database {
 		void getUserInfo(userInfo user);
 
 		userInfoStruct getUserPass(std::string P);
-		userInfoStruct getUserName(std::string N)
+		userInfoStruct getUserName(std::string N);
 	};
 }
 
