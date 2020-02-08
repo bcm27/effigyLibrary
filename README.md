@@ -1,6 +1,6 @@
 # Progress Log
 
-
+7:2:2020 : fixed laptop commit issues. All previous commits on laptop development were under the false email bcm27@lie.com. This was fixed by commiting the proper email address.
 4:2:2020 : worked on setting up a virtual server with a sql database on digital ocean.
 
 Pre 4:1:2020 : Created a skeleton structure of the entire program, api and server application.
