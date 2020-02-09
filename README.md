@@ -1,5 +1,5 @@
 # Progress Log
-
+9:2:2020 : created database and tables on digital ocean mysql server. Working on integrating the needed c++ sql libraries. Possible working solutions: sql connection 8.0
 7:2:2020 : fixed laptop commit issues. All previous commits on laptop development were under the false email bcm27@lie.com. This was fixed by commiting the proper email address.
 4:2:2020 : worked on setting up a virtual server with a sql database on digital ocean.
 
