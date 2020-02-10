@@ -1,10 +1,12 @@
 # Progress Log
-9:2:2020 : created database and tables on digital ocean mysql server. Working on integrating the needed c++ sql libraries. Possible working solutions: sql connection 8.0
-7:2:2020 : fixed laptop commit issues. All previous commits on laptop development were under the false email bcm27@lie.com. This was fixed by commiting the proper email address.
-4:2:2020 : worked on setting up a virtual server with a sql database on digital ocean.
-
-Pre 4:1:2020 : Created a skeleton structure of the entire program, api and server application.
-
+<b>9:2:2020</b> : created database and tables on digital ocean mysql server. Working on integrating the needed c++ sql libraries.                       Possible working solutions: sql connection 8.0
+<br/>
+<b>7:2:2020</b> : fixed laptop commit issues. All previous commits on laptop development were under the false email bcm27@lie.com. This was fixed by commiting the proper email address.
+<br/>
+<b>4:2:2020</b> : worked on setting up a virtual server with a sql database on digital ocean.
+<br/>
+<b>Pre 4:1:2020</b> : Created a skeleton structure of the entire program, api and server application.
+<br/>
 # Effigy Library
 
 The Effigy Library is a platform for developers *and* gamers to collaborate on improving and sharing ideas to make an even better overall gaming experience. Developers can host their game page on our library platform while recruit other talented individuals through our developer portal all while selling there games to customers.
