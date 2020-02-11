@@ -19,15 +19,27 @@ namespace API_Database {
 		std::string tempPassword;
 	};
 
+	// global API_DATABASE METHODS
 	void printStatus();
-	void showSQLError(unsigned int handleType, const SQLHANDLE& handle);
+
+	// CLASS fSQL (effigySQL)
+	class eSQL {
+
+		void showSQLError(unsigned int handleType, const SQLHANDLE& handle);
+
+		void sqlTestQuery();
+	};
 
 	class userInfo {
+	public:
 		void getUserInfo(userInfo user);
 
 		userInfoStruct getUserPass(std::string P);
 		userInfoStruct getUserName(std::string N);
+	private:
 	};
+
+	SQLHANDLE SQLEnvHandle = NULL;
 }
 
 #endif // !_EFFIGY_API_DATABASE_H
