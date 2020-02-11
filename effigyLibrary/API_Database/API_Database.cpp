@@ -6,6 +6,16 @@ void API_Database::printStatus()
 	//PLOG_DEBUG << "We have accesed the database file";
 }
 
+void API_Database::showSQLError(unsigned int handleType, const SQLHANDLE& handle)
+{
+	SQLWCHAR SQLState[1024];
+	SQLWCHAR message[1024];
+	
+	if (SQL_SUCCESS == SQLGetDiagRec(handleType, handle, 1, SQLState, NULL, message, 1024, NULL))
+		// Returns the current values error, warning, and status flags
+		std::cout << "SQL driver message: " << message << "\nSQL state: " << SQLState << "." << std::endl;
+}
+
 class API_Database::userInfo {
 
 	userInfoStruct getUserInfo(userInfo user) {

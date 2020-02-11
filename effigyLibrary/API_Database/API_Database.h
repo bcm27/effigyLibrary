@@ -6,6 +6,10 @@
 #include <string>
 #include <string>
 
+#include <sqlext.h>
+#include <sqltypes.h>
+#include <sql.h>
+
 namespace API_Database {
 
 	struct userInfoStruct {
@@ -16,6 +20,7 @@ namespace API_Database {
 	};
 
 	void printStatus();
+	void showSQLError(unsigned int handleType, const SQLHANDLE& handle);
 
 	class userInfo {
 		void getUserInfo(userInfo user);
