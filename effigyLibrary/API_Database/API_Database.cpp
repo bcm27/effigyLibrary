@@ -42,9 +42,66 @@ class API_Database::eSQL {
 				break; // same as above
 
 			SQLWCHAR retConString[1024];
-			SQLDriverConnect(SQLConnectionHandle, NULL, (SQLWCHAR*)"" /*TODO add login info*/, SQL_NTS, retConString, 1024, NULL, SQL_DRIVER_NOPROMPT);
+
+			// create the connection and handle the results
+			switch (SQLDriverConnect(SQLConnectionHandle, NULL, 
+				(SQLWCHAR*)"DRIVER={SQL Server}; SERVER=159.203.148.249, 1433; DATABASE=effigy; UID=root; PWD=Effigydatabase1@;",
+				SQL_NTS, retConString, 1024, NULL, SQL_DRIVER_NOPROMPT)) {
+
+			case SQL_SUCCESS:
+				break;
+			case SQL_SUCCESS_WITH_INFO:
+				break;
+			case SQL_NO_DATA_FOUND:
+				showSQLError(SQL_HANDLE_DBC, SQLConnectionHandle);
+				SQLret = -1;
+				break;
+			case SQL_INVALID_HANDLE:
+				showSQLError(SQL_HANDLE_DBC, SQLConnectionHandle);
+				SQLret = -1;
+				break;
+			case SQL_ERROR:
+				showSQLError(SQL_HANDLE_DBC, SQLConnectionHandle);
+				SQLret = -1;
+				break;
+			default:
+				break;
+			}
+			
+			// if we made an sql error break the do-while
+			if (SQLret == -1)
+				break;
+
+			if (SQL_SUCCESS != SQLAllocHandle(SQL_HANDLE_STMT, SQLConnectionHandle, &SQLStatementHandle))
+				// Allocates the statement
+				break;
+
+			if (SQL_SUCCESS != SQLExecDirect(SQLStatementHandle, (SQLWCHAR*)SQLQuery, SQL_NTS)) {
+				// Executes a preparable statement
+				showSQLError(SQL_HANDLE_STMT, SQLStatementHandle);
+				break;
+			}
+			else {
+				char name[256];
+				int age;
+				while (SQLFetch(SQLStatementHandle) == SQL_SUCCESS) {
+					//TODO: Add actual database table rows 
+
+					// Fetches the next rowset of data from the result
+					SQLGetData(SQLStatementHandle, 1, SQL_C_DEFAULT, &name, sizeof(name), NULL);
+					SQLGetData(SQLStatementHandle, 2, SQL_C_DEFAULT, &age, sizeof(age), NULL);
+					// Retrieves data for a single column in the result set
+					std::cout << name << " " << age << std::endl;
+				}
+			}
 		} while (false);
-	}
+
+		SQLFreeHandle(SQL_HANDLE_STMT, SQLStatementHandle);
+		SQLDisconnect(SQLConnectionHandle);
+		SQLFreeHandle(SQL_HANDLE_DBC, SQLConnectionHandle);
+		SQLFreeHandle(SQL_HANDLE_ENV, SQLEnvHandle);
+		// Frees the resources and disconnects
+	}// end function
 };
 
 
@@ -64,12 +121,14 @@ class API_Database::userInfo {
 	}
 	userInfoStruct getUserPass(std::string P)
 	{
+		// TODO: return the hashed password of the username given as input
 		userInfoStruct ret; 
 		ret.tempPassword = "temp Pass";
 		return ret;
 	}
 	userInfoStruct getUserName(std::string N)
 	{
+		// TODO: make this actually return a new user object with the default info from db
 		return userInfoStruct();
 	}
 };

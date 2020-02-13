@@ -22,14 +22,14 @@ namespace API_Database {
 	// global API_DATABASE METHODS
 	void printStatus();
 
-	// CLASS fSQL (effigySQL)
 	class eSQL {
-
+	public:
 		void showSQLError(unsigned int handleType, const SQLHANDLE& handle);
 
 		void sqlTestQuery();
 	};
 
+	// class containing all user information 
 	class userInfo {
 	public:
 		void getUserInfo(userInfo user);
