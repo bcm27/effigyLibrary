@@ -1,4 +1,6 @@
 # Progress Log
+<b>13:2:2020</b> : wrote basic connections queries for testing against the database 
+<b>10:2:2020</b> : added SQL connections according to sql.h files and mysql tutorials.
 <b>9:2:2020</b> : created database and tables on digital ocean mysql server. Working on integrating the needed c++ sql libraries.                       Possible working solutions: sql connection 8.0
 <br/>
 <b>7:2:2020</b> : fixed laptop commit issues. All previous commits on laptop development were under the false email bcm27@lie.com. This was fixed by commiting the proper email address.
